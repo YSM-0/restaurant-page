@@ -1,0 +1,30 @@
+const menuPageLoader = function () {
+    const main = document.querySelector('.main')
+
+    const spaghetti = document.createElement('div')
+    const tacos = document.createElement('div')
+    const arepas = document.createElement('div')
+    const burger = document.createElement('div')
+    const caillou = document.createElement('div')
+
+    main.innerHTML = ''
+    
+    main.classList.remove('main')
+    main.classList.add('main-grid')
+    spaghetti.classList.add('card')
+    tacos.classList.add('card')
+    arepas.classList.add('card')
+    burger.classList.add('card')
+    caillou.classList.add('card')
+
+    main.appendChild(spaghetti)
+    main.appendChild(tacos)
+    main.appendChild(arepas)
+    main.appendChild(burger)
+    main.appendChild(caillou)
+
+
+
+}
+
+export { menuPageLoader }
